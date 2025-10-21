@@ -1,0 +1,186 @@
+/* === Futuristic Monochrome Theme === */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+  letter-spacing: 0.4px;
+}
+
+/* Body */
+body {
+  background: linear-gradient(135deg, #0e0e0e, #1b1b1b);
+  color: #d1d1d1;
+  line-height: 1.7;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(30, 30, 30, 0.85);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding: 15px 0;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.navbar a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.25);
+}
+
+/* Container */
+.container {
+  text-align: center;
+  margin-top: 60px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.container img {
+  border-radius: 50%;
+  border: 2px solid #333;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  margin-bottom: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  margin: 20px 0;
+  color: #f0f0f0;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.08);
+}
+
+h2 {
+  font-weight: 400;
+  color: #c4c4c4;
+}
+
+/* Paragraphs */
+p {
+  max-width: 720px;
+  margin: 0 auto 25px;
+  text-align: center;
+  font-size: 1.05rem;
+  color: #b0b0b0;
+  transition: color 0.3s ease;
+}
+
+p:hover {
+  color: #e0e0e0;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.float-child {
+  float: none;
+  width: auto;
+  padding: 16px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background: #333;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.float-child .item {
+  display: block;
+  font-size: 1rem;
+}
+
+.float-child .item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 0 12px;
+  }
+}
+
+/* Make items visible */
+.content {
+  padding: 1.25rem;
+  border: 1px solid #ddd;
+  background: #383333;
+  min-height: 120px; /* so empty items still show */
+}
+
+/* Optional: simple navbar styling */
+.navbar {
+  display: flex;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+}
+.navbar a { text-decoration: none; color: #333; }
+
+
+
+---button--- doesnt work 
+
+
+ /* Button styling */
+ .button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover effect */
+.button:hover {
+  background-color: #45a049;
+}
+
+/* Click effect */
+.button:active {
+  background-color: #3e8e41;
+  transform: scale(0.95); /* Slightly shrink the button */
+}
+
